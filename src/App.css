@@ -1,0 +1,46 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+.App {
+  text-align: center;
+  min-height:100%;
+  position:relative;
+}
+
+#header-container {
+  /* background: #ff0; */
+  /* padding: 10px 10px 10px 10px; */
+  position: fixed;
+  width: 100%;
+  height: 30px;
+}
+
+#main-container {
+  padding: 10px;
+  padding-bottom: 60px; /*Height of footer*/
+  padding-top: 60px; /*Height of header + paddings*/
+}
+
+/*Desktop footer*/
+#footer-container {
+  position: absolute; 
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #6cf;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait){
+  /*Footer for mobile phones: */
+  #footer-container{
+    position: fixed; 
+  }
+}
+
